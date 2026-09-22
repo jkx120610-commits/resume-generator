@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "resume-generator"
+version = "1.0.0"
+description = "A privacy-first Windows desktop application that generates a polished resume image and PDF."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "Pillow>=10.0,<13.0",
+  "reportlab>=4.0,<5.0",
+]
+
+[project.gui-scripts]
+resume-generator = "resume_generator.app:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pyinstaller]
+name = "ResumeGenerator"
+windowed = true
+onefile = true
