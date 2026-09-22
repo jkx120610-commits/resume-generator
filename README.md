@@ -2,6 +2,12 @@
 
 一个本地运行的 Windows 简历生成程序。填写个人信息后，可同时生成高清 PNG 和标准 A4 PDF，适合发送、存档或直接打印。
 
+## 下载
+
+Windows 用户可直接下载免安装版本：
+
+- [ResumeGenerator.exe v1.0.0](https://github.com/jkx120610-commits/resume-generator/releases/download/v1.0.0/ResumeGenerator.exe)
+
 ## 功能
 
 - 图形化表单，不需要编辑 HTML 或代码
